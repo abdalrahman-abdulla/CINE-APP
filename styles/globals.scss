@@ -27,7 +27,7 @@ body {
   }
 }
 .container {
-  width: 85%;
+  width: 85vw;
   margin: auto;
 }
 
@@ -274,13 +274,22 @@ header {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 90vw;
   }
   header {
     .container {
       .search {
         .overlay {
           right: 0%;
+        }
+      }
+    }
+  }
+  .sections {
+    .container {
+      .section {
+        .cards {
+          margin-right: calc(-5vw);
         }
       }
     }
