@@ -4,7 +4,7 @@ const Slider = ({ movies }) => {
   return (
     <>
       {!!movies ? (
-        <div className="slider">
+        <div className="slider" key={index}>
           <img
             src={
               "http://image.tmdb.org/t/p/original/" +
