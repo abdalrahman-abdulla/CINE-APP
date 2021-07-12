@@ -22,7 +22,7 @@ const PageHeader = () => {
             placeholder="Find Move..."
             onKeyUp={(e) => setSearch(e.target.value)}
           />
-          <img src="./img/icon.svg" alt="" className="search-img" />
+          <img src="./img/search.svg" alt="" className="search-img" />
           {search ? (
             <div className="overlay">
               {resSearch?.map((e) => (
