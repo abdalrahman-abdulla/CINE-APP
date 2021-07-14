@@ -25,13 +25,25 @@ const Slider = ({ movies }) => {
               </p>
             </div>
             <div className="slide">
-              <button onClick={() => setIndex(index - 1)}>{"<"}</button>
+              <button
+                onClick={() =>
+                  index > 1 ? setIndex(index - 1) : setIndex(movies.length - 1)
+                }
+              >
+                {"<"}
+              </button>
 
               <span>
                 {" "}
                 {index + 1} / {!!movies ? movies.length : 0}{" "}
               </span>
-              <button onClick={() => setIndex(index + 1)}>{">"}</button>
+              <button
+                onClick={() =>
+                  index < movies.length - 1 ? setIndex(index + 1) : setIndex(0)
+                }
+              >
+                {">"}
+              </button>
             </div>
           </div>
         </div>

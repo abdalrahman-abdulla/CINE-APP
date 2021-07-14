@@ -246,8 +246,10 @@ header {
           }
           .overlay {
             position: absolute;
+            border-radius: 10px;
             bottom: 0;
-            width: 100%;
+            left: 50%;
+            width: 0%;
             height: 0%;
             z-index: -1;
             text-align: center;
@@ -264,6 +266,8 @@ header {
             .overlay {
               height: 100%;
               z-index: 1;
+              left: 0;
+              width: 100%;
             }
           }
         }
@@ -274,7 +278,8 @@ header {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 90vw;
+    width: 100vw;
+    padding: 0 10px !important;
   }
   header {
     .container {
@@ -289,7 +294,7 @@ header {
     .container {
       .section {
         .cards {
-          margin-right: calc(-5vw);
+          margin-right: -10px;
         }
       }
     }
