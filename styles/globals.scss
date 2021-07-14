@@ -294,9 +294,16 @@ header {
     .container {
       .section {
         .cards {
-          margin-right: -0px;
+          margin-right: -10px;
         }
       }
+    }
+  }
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    input {
+      width: 80%;
     }
   }
 }
